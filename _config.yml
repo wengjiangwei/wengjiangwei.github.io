@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home page"
+title                    : "Home page / Jiangwei Weng"
 title_separator          : "-"
 name                     : &name "Jiangwei Weng"
 description              : &description ""
@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Jiangwei Weng"
-  avatar           : "bio-photo.jpg"
+  avatar           : "wjw.png"
   bio              : "Working for TXKJ"
-  location         : "Location"
+  location         : "NanJing, China"
   employer         :
   pubmed           : # ""
   googlescholar    : # "http://yourfullgooglescholarurl.com"
