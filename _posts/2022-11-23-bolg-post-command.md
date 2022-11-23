@@ -12,7 +12,7 @@ tags:
 
 ## VIM命令
 
-## Dokcer命令
+## Docker命令
 
 ## VS Code相关
 
