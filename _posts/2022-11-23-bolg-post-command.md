@@ -1,7 +1,7 @@
 ---
 title: '常用的命令总结'
 date: 2022-11-23
-# permalink: /posts/2012/08/blog-post-4/
+permalink: /posts/Command
 tags:
   - Summary
   - Command

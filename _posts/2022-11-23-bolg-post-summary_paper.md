@@ -1,7 +1,7 @@
 ---
 title: 'Best Conferences&Journals'
 date: 2022-11-23
-# permalink: /posts/2012/08/blog-post-4/
+permalink: /posts/Conferences_Journals
 tags:
   - Summary
   - Conference information

@@ -12,4 +12,4 @@ This paper proposes a CNN-based born-again Takagi-Sugeno-Kang (TSK) fuzzy classi
 
 [Download paper here](http://wengjiangwei.github.io/files/CNNBaTSK.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Y. Jiang, J. Weng, X. Zhang, Z. Yang and W. Hu, "A CNN-Based Born-Again TSK Fuzzy Classifier Integrating Soft Label Information and Knowledge Distillation," in IEEE Transactions on Fuzzy Systems, 2022, doi: 10.1109/TFUZZ.2022.3215566.
