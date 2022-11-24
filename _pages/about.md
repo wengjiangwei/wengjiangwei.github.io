@@ -15,19 +15,22 @@ Before joining TXKJ, I received my M.S. degree in computer technology from the C
 My recently research interests are primarily in the area of **Fuzzy System**, **Deep learning**, **Brain-Computer Interface** and **Computer Vision**. Particularly, I am applying deep learning techniques on the TSK fuzzy modeling field, solving the computer vision tasks and brain-computer interface tasks.
 
 
-## <div align="center">Project ⭐ Update</div>
+Project ⭐ Update
 
-### [Honey](https://github.com/wengjiangwei/Honey) 
+## 🚀[Honey](https://github.com/wengjiangwei/Honey) 
 <details open>
 <summary>Major features</summary>
 
 - **DataSet Analysis**
+  
   ToDo: HonAnal with Jupyter notebook 
   
 - **Convenient Design**
+  
   ToDo: Annotation map function
 
 - **Automatic Reports**
+  
   ToDo: Bad Case
 
 
