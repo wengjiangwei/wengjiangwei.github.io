@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>MambaLLIE</title>
+
+    <title>Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image" content="https://wengjiangwei.github.io/projectPage/MambaLLIE/img/pipeline.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1296">
+    <meta property="og:image:height" content="840">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wengjiangwei.github.io/projectPage/MambaLLIE/"/>
+    <meta property="og:title" content="MambaLLIE" />
+    <meta property="og:description" content="Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space" />
+    <meta name="twitter:description" content="Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space" />
+    <meta name="twitter:image" content="https://wengjiangwei.github.io/projectpage/MambaLLIE/video/vide.gif" />
+
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <br><b> MambaLLIE: Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space </b></br> 
+                <small>
+								NeurIPS 2024
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://wengjiangwei.github.io/">
+                          Jiangwei Weng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?hl=zh-CN&user=0wale0IAAAAJ">
+                            Zhiqiang Yan 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.patternrecognition.asia/qian/">
+                          Jianjun Qian
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://implus.github.io/">
+                          Xiang Li
+                        </a>
+                    </li>
+					<li>
+                        <a href="http://202.119.85.163/open/TutorInfo.aspx?dsbh=tLbjVM9T1OzsoNduSpyHQg==&yxsh=4iVdgPyuKTE=&zydm=L-3Jh59wXco=">
+                          Jian Yang
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://sites.google.com/view/junlineu/">
+                          Jun Li*
+                        </a>
+                    </li>
+                </br>
+					<li>
+						1. Nanjing University of Science and Technology
+                        2. Nanjing University
+					</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2405.16105v1">
+                            <image src="img/logo.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://neurips.cc/virtual/2024/poster/93852">
+                            <image src="img/NeurIPS_logo.png" height="60px">
+                                <h4><strong>Poster</strong></h4>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="" target="popup" onclick="window.open('','popup','width=600,height=400')">
+                            <image src="img/database_icon.png" height="60px">
+                                <h4><strong>Dataset</strong></h4>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="https://github.com/wengjiangwei/MambaLLIE">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                  <img src="video/video.gif" width="750" />
+			</div>
+            <div class="col-md-8 col-md-offset-2">
+							<p class="text-center">
+							The effectiveness of our method on LLIE Video Enhancement
+							</p>
+			</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Recent advances in low light image enhancement have been dominated by Retinex-based learning framework, leveraging convolutional neural networks (CNNs) and Transformers. However, the vanilla Retinex theory primarily addresses global illumination degradation and neglects local issues such as noise and blur in dark conditions. Moreover, CNNs and Transformers struggle to capture global degradation due to their limited receptive fields. While state space models (SSMs) have shown promise in the long-sequence modeling, they face challenges in combining local invariants and global context in visual data.
+                    In this paper, we introduce MambaLLIE, an implicit Retinex-aware low light enhancer featuring a global-then-local state space design. We first propose a Local-Enhanced State Space Module (LESSM) that incorporates an augmented local bias within a 2D selective scan mechanism, enhancing the original SSMs by preserving local 2D dependencies. Additionally, an Implicit Retinex-aware Selective Kernel module (IRSK) dynamically selects features using spatially-varying operations, adapting to varying inputs through an adaptive kernel selection process. Our Global-then-Local State Space Block (GLSSB) integrates LESSM and IRSK with layer normalization (LN) as its core. This design enables MambaLLIE to achieve comprehensive global long-range modeling and flexible local feature aggregation. Extensive experiments demonstrate that MambaLLIE significantly outperforms state-of-the-art CNN and Transformer-based methods.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method
+                </h3>
+                <div class="text-center">
+                    <img src="img/framework.png" width="750"/>
+					<p class="text-justify">
+                        The overall pipeline of the proposed MambaLLIE. Our Global-then-Local State Space Block (GLSSB) integrates Local-enhanced state space module (LESSM) and implicit Retinex-aware selective kernel module (IRSK) with layer normalization as its core, where the maximum and mean maps of low light images can be regarded as a rough illumination prior of GLSSB. Besides, The local-enhanced design essentially introduces the local invariance into state space model, which can integrate the existing directional scan with our local-enhanced term into state space.
+					</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Effective Receptive Field
+                </h3>
+                <div class="text-center">
+                    <img src="img/recev_fileld.png" width="750"/>
+					<p class="text-center">
+                    The Effective Receptive Field (ERF) visualization for SNR-Net, Retinexformer, MambaIR and our MambaLLIE. A broader distribution of bright areas signifies a larger ERF. The receptive field of SNR-Net is large but messy, due to the SNR-aware mechanism, Retinexformer achieves a larger receptive field of the central point, and MambaIR has the global receptive field, but presents the limited local perception. Only our proposed MambaLLIE achieves a global perception ability outwards from central point and preserves the large local receptive field.
+					</p>
+                </div>
+				
+				<div class="text-center">
+                    <img src="img/LOL_res.png" width="750"/>
+					<p class="text-center">
+                    Qualitative comparison with previous methods on LOL-V2-real and LOL-V2-syn datasets. Our MambaLLIE effectively enhances the illumination and preserves the color.
+					</p>
+                </div>
+				
+				<div class="text-center">
+                    <img src="img/SDSD_res.png" width="750"/>
+					<p class="text-center">
+                    Qualitative comparison with previous methods on SMID, SDSD-indoor and SDSD-outdoor datasets. Our MambaLLIE restore the texture and color under challenging degradation, such as the wooden bench and reflective glass.
+					</p>
+                </div>
+				
+				<div class="text-center">
+                    <img src="img/object.png" width="750"/>
+					<p class="text-center">
+                    Visual comparison of our MambaLLIE with recent SOTA methods. (a) Qualitative comparison on object detection, (b) Qualitative comparison on face detection, (c) Toy example of user study, (d) Qualitative comparison of unpaired dataset.
+					</p>
+                </div>
+				
+				<div class="text-center">
+                    <img src="img/append1.png" width="750"/>
+					<p class="text-center">
+                    More qualitative comparisons with SOTAs. (Zoom in for best view)
+					</p>
+                </div>
+
+            </div>
+        </div>
+		
+		
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+				
+		
+                <h3>Citation</h3>	
+				
+				<p>If you find our work useful in your research, please consider citing:</p>			
+				<!-- <a href="https://arxiv.org/abs/2405.16105v1"><img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="img/paper_01.png" width=160></a> -->
+
+					
+				<textarea id="bibtex" class="form-control" readonly>
+				@article{MambaLLIE,
+				  title={MambaLLIE: Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space},
+				  author={Jiangwei Weng and Zhiqiang Yan and Ying Tai and Jianjun Qian and Jian Yang and Jun Li},
+                  journal={NeurIPS 2024},
+                  year={2024}
+				}
+            </textarea>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                    <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a> and <a href="https://fanjunkai1.github.io/">Junkai Fan</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
