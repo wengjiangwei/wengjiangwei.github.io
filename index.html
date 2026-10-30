@@ -1,358 +1,190 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jiangwei Weng</title>
-  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-  <link rel="shortcut icon" type="image/x-icon" href="images/misc/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- Bulma Version 0.7.5-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
-  <link href='css/style.css?_t=20200916' rel='stylesheet' type='text/css'>
-  <script defer src="font-awesome/js/brands.min.js"></script>
-  <script defer src="font-awesome/js/regular.min.js"></script>
-  <script defer src="font-awesome/js/fontawesome.min.js"></script>
-    <style>
-      .red {
-        color: rgb(238, 76, 44);
-        font-style: normal;
-      }
-      .blue {
-        color: rgb(238, 76, 44);
-        font-style: normal;
-      }
-       
-      #intro {
-       margin-top: 0em !important;
-      }
-      
-      .content h3 {
-       margin-bottom: 1em!important;
-       margin-top: 2em!important;
-      }
-
-      .content figure {
-       width: 90%;
-       display: flex;
-       align-items: center;
-       overflow: hidden;
-       margin-left: auto!important;
-       margin-right: auto!important;
-      }
-      
-      .columns:not(:last-child) {
-       margin-bottom: 1.75rem!important;
-      }
-
-      #sidebar {
-        width: 75%;
-      }
-
-      @media screen and (min-width: 769px), print {
-        .column.is-2_5, .column.is-2-tablet {
-          flex: none;
-          width: 20%;
-        }
-      }
-</style>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-</head>
-
-
-<body>
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-2_5">
-          <div class="sticky">
-            <figure class="image" style="width: 11.6rem; margin-top: 6px;">
-              <img src="images/misc/profile.jpg">
-            </figure>
-            <div class="content">
-              <h2 style="margin-top: 1em">Jiangwei Weng</h2>
-              <p>
-                <b>NJUST</b><br/> 
-                China, NanJing 210094
-              </p>
-            </div>
-            <!-- social network icons -->
-            <div class="social">
-              <a href="https://github.com/wengjiangwei" target="_blank">
-                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a;"></span>
-              </a>
-              <a href="https://scholar.google.com.hk/citations?user=6aOtZU4AAAAJ&hl" target="_blank">
-                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
-              </a>
-              <a href="waynejoneswjw@gmail.com" target="_blank">
-                <span class="fa-regular fa-envelope fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
-              </a>
-            </div>
-
-            <div id="sidebar" class="menu sticky is-hidden-mobile">
-              <p class="menu-label"><b>Quick Links</b></p>
-              <ul class="menu-list">
-                <li><a href="#intro">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#services">Services</a></li>
-              </ul>
-            </div>
-            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=JZWhJnvIovCLAaYYOSkGeQ1cLuBFbMEUjviYItYea5U&cl=ffffff&w=a"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jiangwei Weng - Ph.D. student at PCALab, NJUST. Low-level vision, image and video enhancement, and 3D reconstruction."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Jiangwei Weng &middot; Computer Vision Researcher</title>
+    <link rel="icon" href="images/misc/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#intro">Jiangwei Weng</a>
+      <nav class="top-nav" aria-label="Main navigation"><button class="lang-toggle" id="lang-toggle" type="button" aria-pressed="false">&#x4e2d;&#x6587;</button>
+        <a href="#intro">About Me</a>
+        <a href="#news">News</a><a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#services">Academic Service</a>
+        <a href="#awards">Awards</a>
+      </nav>
+    </header>
+    <div class="page-layout">
+      <aside class="sidebar" aria-label="Profile and navigation">
+        <div class="profile">
+          <div class="portrait-wrap">
+            <img
+              class="portrait"
+              src="images/misc/profile.jpg"
+              alt="Jiangwei Weng"
+              width="208"
+              height="232"
+            />
           </div>
-
-
-        </div>
-        <div class="column right-panel">
-          <div class="content">
-
-
-            <!--About Me-->
-            <h2 id="intro">Welcome to Jiangwei Weng (翁江玮)'s Homepage.</h2>
-            <p>
-              I am currently a third-year Ph.D. student at <b>PCALab@NJUST</b>, Nanjing University of Science and Technology, supervised by Prof. <b>Jun Li</b>.
-            </p>
-            </p>
-              I obtained M.S. degree in Computer Science in 2021 from Huzhou University, advised by Prof. <b>Yunliang Jiang</b>.
-            </p>
-            <p>
-              My current work focuses on low-level vision (e.g., image/video enhancement) and 3D reconstruction with its applications in real world.
-              In the past, I have focused my reseach topics on fuzzy system and interpretable modeling for the epilepsy EEG recognition.
-            </p>
-
-            <!--Experience-->
-            <h2 id="experience" style="margin-bottom: 25px;">Experience</h2>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/misc/NJUST.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Ph.D. Student</b> | PCALab@NJUST, Nanjing University of Science and Technology<br>
-                    Time: Mar 2023 - Present. Advisor: Prof. <a href="https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=vYKwPt!F3Smgm!VPFfeUXA==&yxsh=4iVdgPyuKTE=&zydm=fY2NaWnaNpk=" target="_blank">Jun Li</a>  
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <!--Publications-->
-            <h2 id="publications">
-              Publications
-              <span style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .2rem;">
-                <a href="https://scholar.google.com.hk/citations?user=6aOtZU4AAAAJ&hl" target="_blank" style="font-size: 20px;">
-                  [Google Scholar]
-                </a>
-                <a href="https://dblp.uni-trier.de/pid/349/1730.html" target="_blank" style="font-size: 20px;">
-                  [DBLP]
-                </a>
-              </span>
-            </h2>
-
-            <!--List of publications-->
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <!-- <img src="images/publications/NANE.png"> -->
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Daytime-mixed non-aligned learning for real nighttime image enhancement</b><br>
-                    <b>Jiangwei Weng</b>, Junkai Fan, Jianjun Qian, Haiyang Zou, Ying Tai, Jian Yang, Jun Li<br>
-                    <i>IEEE Transactions on Intelligent Transportation Systems (IEEE T-ITS), 2025</i><br>
-                    <a href="https://ieeexplore.ieee.org/document/10945831" target="_blank">[Paper]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <!-- <img src="images/publications/SGDN.png"> -->
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Guided real image dehazing using ycbcr color space</b><br>
-                    Wenxuan Fang, Junkai Fan, Yu Zheng, <b>Jiangwei Weng</b>, Ying Tai, Jun Li<br>
-                    <i>AAAI, 2025</i><br>
-                    <a href="https://arxiv.org/abs/2412.17496" target="_blank">[Paper]</a>
-                    <a href="https://fiwy0527.github.io/projectpage/SGDN/index.html" target="_blank">[Project Page]</a>
-                    <a href="https://github.com/fiwy0527/AAAI_25_SGDN" target="_blank">[Code]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/Mamballie.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>MambaLLIE: Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space</b><br>
-                    <b>Jiangwei Weng</b>, Zhiqiang Yan, Ying Tai, Jianjun Qian, Jian Yang, Jun Li<br>
-                    <i>NeurIPS, 2024</i><br>
-                    <a href="https://arxiv.org/abs/2405.16105v1" target="_blank">[Paper]</a>
-                    <a href="https://wengjiangwei.github.io/projectPage/MambaLLIE/index.html" target="_blank">[Project Page]</a>
-                    <a href="https://github.com/wengjiangwei/MambaLLIE" target="_blank">[Code]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/DVD.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Driving-Video Dehazing with Non-Aligned Regularization for Safety Assistance</b><br>
-                    Junkai Fan, <b>Jiangwei Weng</b>, Kun Wang, Yijun Yang, Jianjun Qian, Jun Li, Jian Yang<br>
-                    <i>CVPR, 2024</i><br>
-                    <a href="https://arxiv.org/abs/2405.09996v1" target="_blank">[Paper]</a>
-                    <a href="https://fanjunkai1.github.io/projectpage/DVD/index.html" target="_blank">[Project Page]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/publications/CNNBaTSK.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>A CNN-Based Born-Again TSK Fuzzy Classifier Integrating Soft Label Information and Knowledge Distillation</b><br>
-                    Yunliang Jiang, <b>Jiangwei Weng</b>, Xiongtao Zhang, Zhen Yang, Wenjun Hu<br>
-                    <i>IEEE Transactions on Fuzzy Systems (IEEE TFS), 2022</i><br>
-                    <a href="https://ieeexplore.ieee.org/document/9925120/" target="_blank">[Paper]</a>
-                    <!-- <a href="https://www.amazon.science/publications/relaxing-contrastiveness-in-multimodal-representation-learning" target="_blank">[Amazon Science]</a> -->
-                  </p>
-                </div>
-              </div>
-            </article>
-            
-            		  
-            
-            <!--Awards-->
-            <h2 id="awards">Awards</h2>
-            <ul>
-              <li> Scholarship of Zhejiang Provincial Government. 2018</li>
-            </ul>
-
-            <h2 id="services">Services</h2>
-            <ul>
-              <li>Conference and Journal Reviewer,
-                <br>&emsp;CVPR, ICCV, ECCV, AAAI, NeurIPS, TFS
-                <!-- <br>&emsp;European Conference on Computer Vision (ECCV)
-                <br>&emsp;Medical Image Computing and Computer Assisted Interventions (MICCAI)
-                <br>&emsp;Winter Conference on Applications of Computer Vision (WACV)
-                <br>&emsp;IEEE Transactions on Medical Imaging (TMI) -->
-              <!-- <li>Challenge and Workshop Organizer,
-                <br>&emsp;IEEE-ISBI 2021: MitoEM Challenge for 3D Mitochondria Instance Segmentation
-              </li>
-              <li>Associate Director, Social Entrepreneurship Initiative, Harvard GSAS Business Club. 2020-2022</li>
-              <li>Student Committee Member, The Mind Brain Behavior (MBB) Initiative, Harvard University. 2019-2020</li> -->
-            </ul>
+          <h1>
+            Jiangwei Weng<span class="chinese-name" lang="zh-CN">&#x7fc1;&#x6c5f;&#x73ae;</span>
+          </h1>
+          <p class="profile-role">Ph.D. Student &middot; PCALab</p>
+          <p class="profile-affiliation">
+            Nanjing University of<br />Science and Technology
+          </p>
+          <p class="location">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z" />
+              <circle cx="12" cy="10" r="2.5" /></svg
+            >Nanjing, China
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com/wengjiangwei"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.3a5.7 5.7 0 0 0-1.5-4 5.3 5.3 0 0 0-.1-4s-1.2-.4-4.2 1.5a14.5 14.5 0 0 0-7.6 0C4.4-.4 3.2 0 3.2 0a5.3 5.3 0 0 0-.1 4 5.7 5.7 0 0 0-1.5 4c0 5.7 3.5 6.9 6.8 7.3A3.5 3.5 0 0 0 7.4 18v4"
+                  transform="translate(1 1) scale(.9)"
+                /></svg
+            ></a>
+            <a
+              href="https://scholar.google.com.hk/citations?user=6aOtZU4AAAAJ&amp;hl"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Google Scholar"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="m2 9 10-6 10 6-10 6L2 9Zm4 3v6c4 3 8 3 12 0v-6M22 9v8"
+                /></svg
+            ></a>
+            <a href="mailto:waynejoneswjw@gmail.com" aria-label="Email Jiangwei"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="3" />
+                <path d="m3 7 9 6 9-6" /></svg
+            ></a>
           </div>
         </div>
-      </div>
-    </div>
+        <nav class="section-nav" aria-label="On this page">
+          <span class="nav-caption">ON THIS PAGE</span>
+          <a href="#intro" class="is-active" aria-current="location"
+            ><span>About me</span><span class="nav-number">01</span></a
+          >
+          <a href="#news"
+            ><span>News</span><span class="nav-number">02</span></a
+          >
+          <a href="#experience"
+            ><span>Experience</span><span class="nav-number">03</span></a
+          >
+          <a href="#publications"
+            ><span>Publications</span><span class="nav-number">04</span></a
+          >
+          <a href="#awards"
+            ><span>Awards</span><span class="nav-number">05</span></a
+          >
+          <a href="#services"
+            ><span>Academic service</span><span class="nav-number">06</span></a
+          >
+        </nav>
+      </aside>
+      <main id="main">
+        <section
+          id="intro"
+          class="intro-section"
+          aria-labelledby="intro-heading"
+        >
+          <h2 id="intro-heading">About Me</h2>
+          <div class="about-copy">
+            <p>
+              I am currently a Ph.D. student at <strong>PCALab</strong>,
+              <strong>Nanjing University of Science and Technology</strong>,
+              supervised by Prof.
+              <a
+                href="https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=vYKwPt!F3Smgm!VPFfeUXA==&amp;yxsh=4iVdgPyuKTE=&amp;zydm=fY2NaWnaNpk="
+                target="_blank"
+                rel="noopener noreferrer"
+                >Jun Li</a
+              >. I obtained my M.S. degree in Computer Science in 2021 from
+              Huzhou University, advised by Prof.
+              <strong>Yunliang Jiang</strong>.
+            </p>
+            <p>
+              My research focuses on <strong>low-level vision</strong>, including image and video
+              enhancement, and <strong>3D reconstruction</strong> for real-world applications.
+            </p>
+            <p>
+              Previously, I worked on fuzzy systems and interpretable modeling
+              for epileptic EEG recognition.
+            </p>
+          <div class="contact-box"><span class="contact-label">Contact</span><a href="mailto:wengjiangwei@njust.edu.cn">&#x2709;&#xFE0F; wengjiangwei@njust.edu.cn</a><span>&#x1F4AC; WeChat: W347314873</span></div><p class="welcome-note" data-zh="&#x6B22;&#x8FCE;&#x5B66;&#x672F;&#x4EA4;&#x6D41;&#x4E0E;&#x4F01;&#x4E1A;&#x5408;&#x4F5C;">Open to research collaborations and industry partnerships.</p>
+          </div>
+          <div class="research-topics" aria-label="Research interests">
+            <span>Low-level Vision</span
+            ><span>Image &amp; Video Enhancement</span
+            ><span>3D Reconstruction</span>
+          </div>
+        </section>
+<section id="news" class="content-section news-section" aria-labelledby="news-heading"><div class="section-heading"><h2 id="news-heading">News &amp; Events</h2></div><ul class="news-list">
+<li><time>2026.10</time><span data-zh="&#x1F4DD; &#x53D7;&#x9080;&#x62C5;&#x4EFB; AAAI &#x548C; ICLR &#x5BA1;&#x7A3F;&#x4EBA;&#x3002">&#x1F4DD; Invited to review for AAAI and ICLR.</span></li>
+<li><time>2026.08</time><span data-zh="&#x1F4DD; &#x53D7;&#x9080;&#x62C5;&#x4EFB; TCSVT &#x548C; TMM &#x5BA1;&#x7A3F;&#x4EBA;&#x3002">&#x1F4DD; Invited to review for TCSVT and TMM.</span></li>
+<li><time>2026.06</time><span data-zh="&#x1F389; &#x606D;&#x559C;&#xFF0C;Wenxuan&#xFF01;&#x6211;&#x4EEC;&#x7684;&#x65E0;&#x4EBA;&#x673A;&#x56FE;&#x50CF;&#x53BB;&#x96FE;&#x5DE5;&#x4F5C;&#x73B0;&#x5DF2;&#x9884;&#x53D1;&#x5E03;&#x4E8E; arXiv&#x3002">&#x1F389; Congratulations, Wenxuan! Our UAV dehazing work is now a preprint on arXiv.</span></li>
+<li><time>2026.05</time><span data-zh="&#x1F4DD; &#x53D7;&#x9080;&#x62C5;&#x4EFB; ECCV &#x548C; ACM MM &#x5BA1;&#x7A3F;&#x4EBA;&#x3002">&#x1F4DD; Invited to review for ECCV and ACM MM.</span></li>
+<li><time>2026.04</time><span data-zh="&#x1F389; &#x606D;&#x559C;&#xFF0C;Y. Zheng&#xFF01;DVDPEC &#x53D1;&#x8868;&#x4E8E; IEEE TCSVT&#xFF08;CAS Q1&#xFF0C; CCF B&#xFF09;&#x3002">&#x1F389; Congratulations, Y. Zheng! DVDPEC published in IEEE TCSVT (CAS Q1, CCF B).</span></li><li><time>2026.04</time><span data-zh="&#x1F389; &#x606D;&#x559C;&#xFF0C;Wenxuan&#xFF01;WeatherCycle &#x53D1;&#x8868;&#x4E8E; IEEE TCSVT&#xFF08;CAS Q1&#xFF0C; CCF B&#xFF09;&#x3002">&#x1F389; Congratulations, Wenxuan! WeatherCycle published in IEEE TCSVT (CAS Q1, CCF B).</span></li>
+<li><time>2025.12</time><span data-zh="&#x1F4DD; &#x53D7;&#x9080;&#x62C5;&#x4EFB; CVPR &#x5BA1;&#x7A3F;&#x4EBA;&#x3002">&#x1F4DD; Invited to review for CVPR.</span></li>
+<li><time>2025.09</time><span data-zh="&#x1F389; &#x606D;&#x559C;&#xFF0C;Wenxuan&#xFF01;&#x6211;&#x4EEC;&#x7684;&#x6076;&#x52A3;&#x5929;&#x6C14;&#x56FE;&#x50CF;&#x590D;&#x539F;&#x5DE5;&#x4F5C;&#x73B0;&#x5DF2;&#x9884;&#x53D1;&#x5E03;&#x4E8E; arXiv&#x3002">&#x1F389; Congratulations, Wenxuan! Our adverse-weather restoration work is now a preprint on arXiv.</span></li>
+<li><time>2025.05</time><span data-zh="&#x1F389; &#x606D;&#x559C;&#xFF0C;W. Yu&#xFF01;AIE-Net &#x6536;&#x5F55;&#x4E8E; 2025 &#x4E2D;&#x56FD;&#x81EA;&#x52A8;&#x5316;&#x5927;&#x4F1A;&#xFF08;CCF C&#xFF09;&#x3002">&#x1F389; Congratulations, W. Yu! AIE-Net appeared at the 2025 China Automation Congress (CCF C).</span></li>
+<li><time>2025.03</time><span data-zh="&#x1F389; MixASNet &#x53D1;&#x8868;&#x4E8E; IEEE T-ITS&#xFF08;CAS Q2&#xFF0C; CCF B&#xFF09;&#x3002">&#x1F389; MixASNet published in IEEE T-ITS (CAS Q2, CCF B).</span></li>
+<li><time>2025.02</time><span data-zh="&#x1F389; &#x606D;&#x559C;&#xFF0C;Wenxuan&#xFF01;SGDN &#x88AB; AAAI 2025 &#x5F55;&#x7528;&#xFF08;CCF A&#xFF09;&#x3002">&#x1F389; Congratulations, Wenxuan! SGDN was accepted by AAAI 2025 (CCF A).</span></li>
+<li><time>2024.12</time><span data-zh="&#x1F389; MambaLLIE &#x53D1;&#x8868;&#x4E8E; NeurIPS 2024&#xFF08;CCF A&#xFF09;&#x3002">&#x1F389; MambaLLIE published at NeurIPS 2024 (CCF A).</span></li>
+<li><time>2024.06</time><span data-zh="&#x1F389; &#x606D;&#x559C;&#xFF0C;Junkai&#xFF01;DVD &#x53D1;&#x8868;&#x4E8E; CVPR 2024&#xFF08;CCF A&#xFF09;&#x3002">&#x1F389; Congratulations, Junkai! DVD published at CVPR 2024 (CCF A).</span></li>
+</ul></section>
 
-    <!-- Footer -->
-    <footer class="container">
-      <br><hr>
-      <div class="row" style="text-align: center">
-        © Jiangwei Weng 2024-2025, modified from Zudi Lin's website
-      </div>
-    </footer>
-  </section>
-
-
-  <script>
-
-    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
-
-    $('#sidebar').on('click', 'a', function(){
-      activate($(this))
-    });
-    
-    $(window).on('resize', debounce(calculateBoundary, 300));
-
-    $(document).on('scroll', debounce(judgeScroll, 300));
-
-    calculateBoundary();
-    judgeScroll();
-    
-    function  calculateBoundary() {
-      offsetList = $hashList.map(function(idx, ele){
-        return $(ele.hash).offset().top
-      });
-      maxScrollHeight = $(document).height() - $(window).height()
-    }
-    
-    function judgeScroll() {
-      var tps = $("html").scrollTop()
-              ? $("html").scrollTop()
-              : $("body").scrollTop(),
-              len = offsetList.length;
-      if(tps >= maxScrollHeight-10){
-        activate($hashList.eq(len-1));
-        return
-      }
-      for(var i=0; i<len; i++){
-       if(tps+50<offsetList[i]){
-          activate($hashList.eq(Math.max(0,i-1)));
-          return
-        }
-      }
-    }
-
-    function activate(ele){
-      $hashList.removeClass('is-active');
-      ele.addClass('is-active');
-    }
-
-    function debounce(fn, delay) {
-      var timeout = null;
-      return function () {
-        var args = arguments;
-        var context = this;
-        if (!timeout) {
-          timeout = setTimeout(function () {
-            timeout = 0;
-            return fn.apply(context, args);
-          }, delay);
-        }
-      };
-    }
-
-
-
-  </script>
-
-
-</body>
-
-</html>
+<section id="experience" class="content-section" aria-labelledby="experience-heading">
+<div class="section-heading"><h2 id="experience-heading">Experience</h2></div>
+<article class="experience-card"><div class="institution-logo"><img src="images/misc/NJUST.png" alt="NJUST emblem" width="64" height="64" loading="lazy"></div><div class="experience-details"><span class="date-label">MAR 2023 &mdash; PRESENT</span><h3>Ph.D. Student <span class="current-badge">Current</span></h3><p>PCALab &middot; Nanjing University of Science and Technology</p><p class="muted">Advisor: Prof. Jun Li</p></div></article></section>
+<section id="publications" class="content-section" aria-labelledby="publications-heading">
+<div class="section-heading publications-heading"><h2 id="publications-heading">Publications</h2><div class="academic-links"><a href="https://scholar.google.com.hk/citations?user=6aOtZU4AAAAJ&amp;hl" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a><a href="https://dblp.uni-trier.de/pid/349/1730.html" target="_blank" rel="noopener noreferrer">DBLP &#8599;</a></div></div>
+<div class="publication-toolbar"><p>Filter by year</p><div class="year-filters" role="group" aria-label="Filter publications by year"><button type="button" data-year="all" aria-pressed="true" class="is-active">All</button><button type="button" data-year="2026" aria-pressed="false">2026</button><button type="button" data-year="2025" aria-pressed="false">2025</button><button type="button" data-year="2024" aria-pressed="false">2024</button><button type="button" data-year="2022" aria-pressed="false">2022</button></div></div>
+<p id="filter-status" class="sr-only" role="status" aria-live="polite">Showing all 10 publications.</p>
+<div class="publication-list">
+<article class="publication-card" data-year="2026">
+<div class="publication-info"><div class="publication-meta"><span class="venue">arXiv</span><span>2026</span></div><h3 data-zh="面向无人机图像去雾：无人机大气散射模型、基准与几何感知深度展开网络">Towards UAV Image Dehazing: A UAV Atmospheric Scattering Model, Benchmark, and Geometry-Aware Deep Unfolding Network</h3><p class="authors">W. Fang, <b>Jiangwei Weng</b>, Y. Zheng, J. Fan, G. Wang, X. Chen, J. Yang, J. Li</p><p class="journal">arXiv:2606.16392, 2026 &middot; Preprint &middot; CCF/CAS: N/A</p><div class="paper-links"><a href="https://arxiv.org/abs/2606.16392" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2026">
+<div class="publication-info"><div class="publication-meta"><span class="venue">IEEE TCSVT</span><span>2026</span></div><h3 data-zh="DVDPEC：基于位置嵌入码本的驾驶视频去雾">DVDPEC: Driving-Video Dehazing via Position Embedding-based Codebook</h3><p class="authors">Y. Zheng, W. Fang, X. Hu, J. Fan, <b>Jiangwei Weng</b>, J. Li, K. Zhang, J. Yang</p><p class="journal">IEEE Transactions on Circuits and Systems for Video Technology, 2026 &middot; CAS Q1 &middot; CCF B</p><div class="paper-links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=6aOtZU4AAAAJ&amp;citation_for_view=6aOtZU4AAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2026">
+<div class="publication-info"><div class="publication-meta"><span class="venue">IEEE TCSVT</span><span>2026</span></div><h3 data-zh="WeatherCycle：基于色彩空间解耦循环学习的非配对多天气图像复原">WeatherCycle: Unpaired Multi-weather Restoration via Color Space Decoupled Cycle Learning</h3><p class="authors">W. Fang, <b>Jiangwei Weng</b>, J. Qian, J. Yang, J. Li</p><p class="journal">IEEE Transactions on Circuits and Systems for Video Technology, 2026 &middot; CAS Q1 &middot; CCF B</p><div class="paper-links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=6aOtZU4AAAAJ&amp;citation_for_view=6aOtZU4AAAAJ:Tyk-4Ss8FVUC" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2025">
+<div class="publication-info"><div class="publication-meta"><span class="venue">CAC</span><span>2025</span></div><h3 data-zh="AIE-Net：HVI 色彩空间中用于低光图像增强的自适应光照估计">AIE-Net: Adaptive Illumination Estimation for Low-Light Image Enhancement in HVI Color Space</h3><p class="authors">W. Yu, <b>Jiangwei Weng</b>, J. Li</p><p class="journal">2025 China Automation Congress (CAC), pp. 7595?7600 &middot; CCF C</p><div class="paper-links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=6aOtZU4AAAAJ&amp;citation_for_view=6aOtZU4AAAAJ:W7OEmFMy1HYC" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2025">
+<div class="publication-info"><div class="publication-meta"><span class="venue">arXiv</span><span>2025</span></div><h3 data-zh="当色彩空间解耦遇上扩散模型：恶劣天气图像复原">When Color-space Decoupling Meets Diffusion for Adverse-weather Image Restoration</h3><p class="authors">W. Fang, J. Fan, C. Wang, X. Hu, <b>Jiangwei Weng</b>, Y. Tai, J. Yang, J. Li</p><p class="journal">arXiv:2509.17024, 2025 &middot; Preprint &middot; CCF/CAS: N/A</p><div class="paper-links"><a href="https://arxiv.org/abs/2509.17024" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2025">
+<div class="publication-info"><div class="publication-meta"><span class="venue">IEEE T-ITS</span><span>2025.03</span></div><h3>Daytime-mixed non-aligned learning for real nighttime image enhancement</h3><p class="authors"><b>Jiangwei Weng</b>, Junkai Fan, Jianjun Qian, Haiyang Zou, Ying Tai, Jian Yang, Jun Li</p><p class="journal">IEEE Transactions on Intelligent Transportation Systems (IEEE T-ITS), 2025 &middot; CAS Q2 &middot; CCF B</p><div class="paper-links"><a href="https://ieeexplore.ieee.org/document/10945831" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2025">
+<div class="publication-info"><div class="publication-meta"><span class="venue">AAAI</span><span>2025.02</span></div><h3>Guided real image dehazing using ycbcr color space</h3><p class="authors">Wenxuan Fang, Junkai Fan, Yu Zheng, <b>Jiangwei Weng</b>, Ying Tai, Jun Li</p><p class="journal">AAAI, 2025 &middot; CCF A</p><div class="paper-links"><a href="https://arxiv.org/abs/2412.17496" target="_blank" rel="noopener noreferrer">Paper &#8599;</a><a href="https://fiwy0527.github.io/projectpage/SGDN/index.html" target="_blank" rel="noopener noreferrer">Project &#8599;</a><a href="https://github.com/fiwy0527/AAAI_25_SGDN" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2024">
+<div class="publication-info"><div class="publication-meta"><span class="venue">NeurIPS</span><span>2024.12</span></div><h3>MambaLLIE: Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space</h3><p class="authors"><b>Jiangwei Weng</b>, Zhiqiang Yan, Ying Tai, Jianjun Qian, Jian Yang, Jun Li</p><p class="journal">NeurIPS, 2024 &middot; CCF A</p><div class="paper-links"><a href="https://arxiv.org/abs/2405.16105v1" target="_blank" rel="noopener noreferrer">Paper &#8599;</a><a href="projectPage/MambaLLIE/index.html" target="_blank" rel="noopener noreferrer">Project &#8599;</a><a href="https://github.com/wengjiangwei/MambaLLIE" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2024">
+<div class="publication-info"><div class="publication-meta"><span class="venue">CVPR</span><span>2024.06</span></div><h3>Driving-Video Dehazing with Non-Aligned Regularization for Safety Assistance</h3><p class="authors">Junkai Fan, <b>Jiangwei Weng</b>, Kun Wang, Yijun Yang, Jianjun Qian, Jun Li, Jian Yang</p><p class="journal">CVPR, 2024 &middot; CCF A</p><div class="paper-links"><a href="https://arxiv.org/abs/2405.09996v1" target="_blank" rel="noopener noreferrer">Paper &#8599;</a><a href="https://fanjunkai1.github.io/projectpage/DVD/index.html" target="_blank" rel="noopener noreferrer">Project &#8599;</a></div></div></article>
+<article class="publication-card" data-year="2022">
+<div class="publication-info"><div class="publication-meta"><span class="venue">IEEE TFS</span><span>2022</span></div><h3>A CNN-Based Born-Again TSK Fuzzy Classifier Integrating Soft Label Information and Knowledge Distillation</h3><p class="authors">Yunliang Jiang, <b>Jiangwei Weng</b>, Xiongtao Zhang, Zhen Yang, Wenjun Hu</p><p class="journal">IEEE Transactions on Fuzzy Systems (IEEE TFS), 2022 &middot; CAS Q2 &middot; CCF B</p><div class="paper-links"><a href="https://ieeexplore.ieee.org/document/9925120/" target="_blank" rel="noopener noreferrer">Paper &#8599;</a></div></div></article>
+</div></section>
+<div class="bottom-grid">
+<section id="awards" class="content-section" aria-labelledby="awards-heading"><div class="section-heading"><h2 id="awards-heading">Awards</h2></div><div class="detail-card"><div><span class="date-label">2018</span><h3>Zhejiang Provincial<br>Government Scholarship</h3><p>Scholarship of Zhejiang Provincial Government</p></div></div></section>
+<section id="services" class="content-section" aria-labelledby="services-heading"><div class="section-heading"><h2 id="services-heading">Academic service</h2></div><div class="detail-card"><div><h3>Conference &amp; Journal Reviewer</h3><ul class="venue-tags" aria-label="Review venues"><li>CVPR</li><li>ICCV</li><li>ECCV</li><li>AAAI</li><li>ICLR</li><li>ACM MM</li><li>TMM</li><li>TCSVT</li><li>NeurIPS</li><li>TFS</li></ul></div></div></section>
+</div>
+<footer class="site-footer"><p>&copy; <span id="copyright-year">2026</span> Jiangwei Weng <span class="footer-divider">/</span> Computer Vision Research</p><a href="#intro">Back to top &#8593;</a></footer>
+</main></div></body></html>
